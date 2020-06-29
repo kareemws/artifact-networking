@@ -8,7 +8,7 @@ class Ok<ContentType>(val data: ContentType) : Success<ContentType>()
 
 class EmptyOk<ContentType> : Success<ContentType>()
 
-class NoContent<ContentType> : Response<ContentType>()
+class NoContent<ContentType> : Success<ContentType>()
 
 
 sealed class Failure<ContentType>(val message: String?, val statusCode: Int) :
